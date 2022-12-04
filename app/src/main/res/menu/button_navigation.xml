@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_item"
+        android:icon="@drawable/search"
+        android:fontFamily="serif"
+
+        android:title="Search" />
+    <item
+        android:id="@+id/airport_item"
+        android:icon="@drawable/airport"
+        android:fontFamily="serif"
+
+
+        android:title="Airports" />
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/setting"
+        android:fontFamily="serif"
+
+
+        android:title="Settings" />
+</menu>

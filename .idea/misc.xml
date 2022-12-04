@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable-anydpi/calendar.xml" value="0.1135" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable-anydpi/close.xml" value="0.1725" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable-anydpi/switch.xml" value="0.1135" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/button_layout.xml" value="0.1135" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/circle_button.xml" value="0.1135" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/fm1.xml" value="0.1265" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/fm2.xml" value="0.1265" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/frame_layout.xml" value="0.1135" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/drawable/gradient.xml" value="0.1755" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_airports_details.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_dashboard.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_flight_details.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_flights.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_found_flights.xml" value="0.4" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_full_screen_maps.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_search.xml" value="0.176" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/airport_item.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/arrivals.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/departures.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/flight_item.xml" value="0.144" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_airports.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_home.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_main.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_my_flight.xml" value="0.2" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_search.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/imageslideritem.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/newflightitem.xml" value="0.176" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/layout/secondairport_item.xml" value="0.264" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/menu-v26/search.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/menu/button_navigation.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/menu/close.xml" value="0.1" />
+        <entry key="..\:/Users/USER/StudioProjects/SuiviDeVol/app/src/main/res/menu/search.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

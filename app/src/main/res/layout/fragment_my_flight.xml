@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MyFlightFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#166199"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="serif"
+                android:text="Search"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="RtlSymmetry" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/button_layout"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your flight by entering the route you want to track"
+                android:textColor="#1d609c"
+                android:fontFamily="serif"
+
+                android:textSize="16dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/group_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+
+            android:background="@drawable/frame_layout"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/plane_takeoff"
+                    android:drawablePadding="10sp"
+                    android:drawableTint="@color/white"
+                    android:text="Departure Airport"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/departure"
+                    android:fontFamily="serif"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:hint="Leaving from"
+                    android:outlineAmbientShadowColor="@color/black" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginVertical="15sp"
+                    android:background="@drawable/frame_layout"
+                    android:src="@drawable/exchange"
+                    android:fontFamily="serif"
+
+                    android:id="@+id/exchange"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:drawableEnd="@drawable/planelanding_avion_13264"
+                    android:drawablePadding="10sp"
+                    android:drawableTint="@color/white"
+                    android:text="Arrival Airport"
+                    android:fontFamily="serif"
+
+                    android:textColor="@color/white"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/arrival"
+                    android:fontFamily="serif"
+                    android:background="@color/white"
+
+                    android:hint="Going to"
+                    android:focusable="false"
+                    android:outlineAmbientShadowColor="@color/black" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/white"
+
+                    android:drawableStart="@drawable/calendar"
+
+                    android:fontFamily="serif"
+                    android:textSize="16dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/date"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:drawableTint="#cccccc"
+                    android:hint="Select date"
+                    android:outlineAmbientShadowColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginVertical="15dp"
+                    android:id="@+id/clear"
+                    android:fontFamily="serif"
+
+                    android:text="Clear all"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/search_flights"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:enabled="true"
+            android:background="@drawable/button_layout"
+            android:backgroundTint="#166199"
+            android:elevation="5dp"
+            android:text="Search flights"
+            android:textAllCaps="false"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

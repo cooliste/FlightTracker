@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5sp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/frame_layout"
+        tools:ignore="MissingConstraints"
+        android:padding="5dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flight AK780"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:id="@+id/flight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scheduled"
+                            android:textColor="@color/white"
+                            android:drawableStart="@drawable/ic_baseline_circle_24"
+                            android:drawablePadding="5dp"
+                            android:textSize="20dp"
+                            android:id="@+id/state"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACC"
+                                android:textStyle="bold"
+                                android:textSize="45dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/departure_airport"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Accra"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:id="@+id/departure_city"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5:50 PM"
+                                android:textSize="22dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/departure_time"
+                                android:textStyle="bold"
+                                android:layout_marginTop="25dp"
+                                />
+                            <TextView
+                                android:drawablePadding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="14 Oct 2022"
+                                android:textSize="18dp"
+                                android:orientation="vertical"
+                                android:id="@+id/departure_date"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"
+                                />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/final_flight"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DBX"
+                                android:layout_gravity="end"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="45dp"
+                                android:id="@+id/arrival_airport"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Dubai"
+                                android:textSize="18dp"
+                                android:layout_gravity="end"
+                                android:textStyle="bold"
+                                android:id="@+id/arrival_city"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12:40 PM"
+                                android:textSize="22dp"
+                                android:id="@+id/arrival_time"
+                                android:layout_gravity="end"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginTop="25dp"
+                                />
+                            <TextView
+                                android:drawablePadding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 Oct 2022"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:orientation="vertical"
+                                android:id="@+id/arrival_date"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="end"
+                                />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AirportsDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#166199"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:id="@+id/backAF"
+                android:gravity="start"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:id="@+id/details"/>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="8dp"
+            android:layout_height="wrap_content">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:context=".activities.FullScreenMapsActivity"/>
+<!--         hh-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                app:cardElevation="1dp"-->
+<!--                app:cardUseCompatPadding="true">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/place_item_img"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:src="@drawable/dallas_airport"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/gradient"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:paddingBottom="10dp"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:background="@color/trans_black"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/details_name"-->
+<!--                                android:layout_width="135dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:text="Dallas Airport"-->
+<!--                                android:textSize="18sp" />-->
+
+
+
+
+
+<!--                        </RelativeLayout>-->
+
+
+
+
+
+
+<!--                    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            vg-->
+        </FrameLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:textSize="15dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1010120"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/longitude"
+            android:gravity="end"
+            android:textStyle="bold"
+            />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:textSize="15dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1010120"
+                android:id="@+id/latitude"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="end"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="15dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris,France"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:id="@+id/details_city"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/tab_layout"
+            android:background="@color/white"
+            app:tabInlineLabel="true"
+            app:tabTextColor="#166199"
+            app:tabIndicatorColor="#166199"
+            app:tabSelectedTextColor="#166199"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="10sp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Departures"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginVertical="5dp">
+                //v Table header
+                <TableRow
+                    android:background="#444444">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Time"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:padding="7dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Destination"
+                        android:textStyle="bold"
+                        android:padding="7dp"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Flight#"
+                        android:layout_weight="2"
+                        android:padding="7dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+                // Table data
+                <TableRow
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="5:50 AM"
+                        android:padding="0sp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="AK 784"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Scheduled"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="5:50 AM"
+                        android:padding="0sp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="AK 784"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Scheduled"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+                <Button
+                    android:id="@+id/group_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_layout"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="See all flights"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10sp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Arrivals"/>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginVertical="5dp">
+                        //v Table header
+                        <TableRow
+                            android:background="#444444">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:text="Time"
+                                android:layout_weight="2"
+                                android:textStyle="bold"
+                                android:padding="7dp"
+                                android:textSize="15dp"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:text="Destination"
+                                android:textStyle="bold"
+                                android:padding="7dp"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:layout_weight="5"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:text="Flight#"
+                                android:layout_weight="2"
+                                android:padding="7dp"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:textColor="@color/white"/>
+                        </TableRow>
+                        // Table data
+                        <TableRow
+                            android:background="@color/white"
+                            android:layout_marginVertical="10dp">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:text="5:50 AM"
+                                android:padding="0sp"
+                                android:layout_weight="2"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_weight="5"
+                                >
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Tokyo"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:padding="2sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Tokyo"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="2"
+                                >
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="AK 784"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:padding="2sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Scheduled"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    />
+
+                            </LinearLayout>
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/white"
+                            android:layout_marginVertical="10dp">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:text="5:50 AM"
+                                android:padding="0sp"
+                                android:layout_weight="2"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_weight="5"
+                                >
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Tokyo"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:padding="2sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Tokyo"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="2"
+                                >
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="AK 784"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:padding="2sp"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Scheduled"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </TableRow>
+                    </TableLayout>
+                    <Button
+                        android:id="@+id/group_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/button_layout"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="See all flights"
+                        android:elevation="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

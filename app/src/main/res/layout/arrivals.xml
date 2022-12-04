@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AirportsDetails">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginVertical="5dp">
+                //v Table header
+                <TableRow
+                    android:background="#444444">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Time"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:padding="7dp"
+                        android:textSize="15dp"
+                        android:id="@+id/icao"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Destination"
+                        android:textStyle="bold"
+                        android:padding="7dp"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Flight#"
+                        android:layout_weight="2"
+                        android:padding="7dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+                // Table data
+                <TableRow
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="5:50 AM"
+                        android:padding="0sp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="AK 784"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Scheduled"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="5:50 AM"
+                        android:padding="0sp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Tokyo"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="AK 784"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Scheduled"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/group_11"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button_layout"
+                android:layout_marginHorizontal="10dp"
+                android:text="See all flights"
+                android:elevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
